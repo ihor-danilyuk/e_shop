@@ -12,7 +12,8 @@
 
     <ul class="list-group">
         {% for category in all_categories %}
-            <li class="category-list  list-group-item active">{{ category.name }}</li>
+        <a href="/product">{{ category.name }}</a>
+            <!--<li class="category-list  list-group-item active">{{ category.name }}</li>-->
         {% endfor %}
 
     </ul>

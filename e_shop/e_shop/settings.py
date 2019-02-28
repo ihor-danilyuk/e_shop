@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 ]
 
 MY_APPS = ['product',
-           'user'
+           'user',
+           'ckeditor',
            ]
 
 INSTALLED_APPS += MY_APPS

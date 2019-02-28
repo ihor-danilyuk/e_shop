@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'index.html' %}
+{% load static %}
+
+{% block body %}
+<style>
+    .main-page {
+    float: left;
+    margin-right: 2%;
+    }
+</style>
+<a class="main-page" href="/">На главную</a>
+
+{% for product in all_product %}
+<div><img src="../{{ product.image }}"/>
+    <li>{{ product.producer }}</li>
+    <li>{{ product.name }}</li>
+    <li>{{ product.price }}</li></div>
+
+
+{% endfor %}
+
+
+{% endblock %}
+
+
+
+
